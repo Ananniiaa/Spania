@@ -1,0 +1,16 @@
+<button id="btn" type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+
+let butonulMeu = document.getElementById("btn");
+let elementNume = document.getElementById("name");
+let elementSocialMedia = document.getElementById("social-media");
+let elementPhoneNumber = document.getElementById("phone-number");
+
+butonulMeu.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    console.log(elementNume.value);
+    console.log(elementPhoneNumber.value);
+    console.log(elementSocialMedia.value);
+})
